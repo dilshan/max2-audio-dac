@@ -1,0 +1,684 @@
+/*<simulation_settings>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Max2AudioDac -c Max2AudioDac --vector_source="D:/projects/audio-dac/Waveform.vwf" --testbench_file="D:/projects/audio-dac/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Max2AudioDac -c Max2AudioDac --vector_source="D:/projects/audio-dac/Waveform.vwf" --testbench_file="D:/projects/audio-dac/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/projects/audio-dac/simulation/qsim/" Max2AudioDac -c Max2AudioDac</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/projects/audio-dac/simulation/qsim/" Max2AudioDac -c Max2AudioDac</tnetlist_cmd>
+<modelsim_script>onerror {exit -code 1}
+vlib work
+vlog -work work Max2AudioDac.vo
+vlog -work work Waveform.vwf.vt
+vsim -novopt -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Max2AudioDac_vlg_vec_tst
+vcd file -direction Max2AudioDac.msim.vcd
+vcd add -internal Max2AudioDac_vlg_vec_tst/*
+vcd add -internal Max2AudioDac_vlg_vec_tst/i1/*
+proc simTimestamp {} {
+    echo "Simulation time: $::now ps"
+    if { [string equal running [runStatus]] } {
+        after 2500 simTimestamp
+    }
+}
+after 2500 simTimestamp
+run -all
+quit -f
+</modelsim_script>
+<modelsim_script_timing>onerror {exit -code 1}
+vlib work
+vlog -work work Max2AudioDac.vo
+vlog -work work Waveform.vwf.vt
+vsim -novopt -c -t 1ps -L maxii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Max2AudioDac_vlg_vec_tst
+vcd file -direction Max2AudioDac.msim.vcd
+vcd add -internal Max2AudioDac_vlg_vec_tst/*
+vcd add -internal Max2AudioDac_vlg_vec_tst/i1/*
+proc simTimestamp {} {
+    echo "Simulation time: $::now ps"
+    if { [string equal running [runStatus]] } {
+        after 2500 simTimestamp
+    }
+}
+after 2500 simTimestamp
+run -all
+quit -f
+</modelsim_script_timing>
+<hdl_lang>verilog</hdl_lang>
+</simulation_settings>*/
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 64000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 1000.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("bclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("din")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("dout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 16;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("dout[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("dout[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "dout";
+}
+
+SIGNAL("wclk")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("bclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 64;
+			LEVEL 0 FOR 500.0;
+			LEVEL 1 FOR 500.0;
+		}
+	}
+}
+
+TRANSITION_LIST("din")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 2000.0;
+		LEVEL 1 FOR 2000.0;
+		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 3000.0;
+		LEVEL 0 FOR 48000.0;
+	}
+}
+
+TRANSITION_LIST("dout[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("dout[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 999.0;
+		LEVEL 0 FOR 63001.0;
+	}
+}
+
+TRANSITION_LIST("wclk")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 64000.0;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "din";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "wclk";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout";
+	EXPAND_STATUS = EXPANDED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+	CHILDREN = 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "dout[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 19;
+	TREE_LEVEL = 1;
+	PARENT = 3;
+}
+
+TIME_BAR
+{
+	TIME = 0;
+	MASTER = TRUE;
+}
+;

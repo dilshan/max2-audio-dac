@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/DSP,Library/DSP/Signal Generation,Project,Library,Library/DSP/Primitive DSP" />
+ <window width="1936" height="1056" x="-8" y="-8" />
+</preferences>

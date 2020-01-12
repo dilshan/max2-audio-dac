@@ -1,0 +1,76 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# File: /home/dilshan/temp/RTL/Max2AudioDac.csv
+# Generated on: Sun Jan 12 11:20:00 2020
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,I/O Standard,Reserved,Current Strength,Strict Preservation
+lout[0],Unknown,PIN_51,1,3.3-V LVCMOS,,,
+bclk,Unknown,PIN_2,1,3.3-V LVCMOS,,,
+din,Unknown,PIN_3,1,3.3-V LVCMOS,,,
+lout[15],Unknown,PIN_34,1,3.3-V LVCMOS,,,
+lout[14],Unknown,PIN_35,1,3.3-V LVCMOS,,,
+wclk,Unknown,PIN_4,1,3.3-V LVCMOS,,,
+rout[1],Unknown,PIN_90,2,3.3-V LVCMOS,,,
+lout[13],Unknown,PIN_36,1,3.3-V LVCMOS,,,
+lout[12],Unknown,PIN_37,1,3.3-V LVCMOS,,,
+lout[11],Unknown,PIN_38,1,3.3-V LVCMOS,,,
+lout[10],Unknown,PIN_39,1,3.3-V LVCMOS,,,
+lout[9],Unknown,PIN_40,1,3.3-V LVCMOS,,,
+lout[8],Unknown,PIN_41,1,3.3-V LVCMOS,,,
+lout[7],Unknown,PIN_42,1,3.3-V LVCMOS,,,
+lout[6],Unknown,PIN_43,1,3.3-V LVCMOS,,,
+lout[5],Unknown,PIN_44,1,3.3-V LVCMOS,,,
+lout[4],Unknown,PIN_47,1,3.3-V LVCMOS,,,
+lout[3],Unknown,PIN_48,1,3.3-V LVCMOS,,,
+lout[2],Unknown,PIN_49,1,3.3-V LVCMOS,,,
+lout[1],Unknown,PIN_50,1,3.3-V LVCMOS,,,
+rout[15],Unknown,PIN_74,2,3.3-V LVCMOS,,,
+rout[14],Unknown,PIN_75,2,3.3-V LVCMOS,,,
+rout[13],Unknown,PIN_76,2,3.3-V LVCMOS,,,
+rout[12],Unknown,PIN_77,2,3.3-V LVCMOS,,,
+rout[11],Unknown,PIN_78,2,3.3-V LVCMOS,,,
+rout[10],Unknown,PIN_81,2,3.3-V LVCMOS,,,
+rout[9],Unknown,PIN_82,2,3.3-V LVCMOS,,,
+rout[7],Unknown,PIN_84,2,3.3-V LVCMOS,,,
+rout[8],Unknown,PIN_83,2,3.3-V LVCMOS,,,
+rout[5],Unknown,PIN_86,2,3.3-V LVCMOS,,,
+rout[6],Unknown,PIN_85,2,3.3-V LVCMOS,,,
+rout[4],Unknown,PIN_87,2,3.3-V LVCMOS,,,
+rout[3],Unknown,PIN_88,2,3.3-V LVCMOS,,,
+rout[2],Unknown,PIN_89,2,3.3-V LVCMOS,,,
+rout[0],Unknown,PIN_91,2,3.3-V LVCMOS,,,
+lout[16],Unknown,PIN_33,1,3.3-V LVCMOS,,,
+lout[17],Unknown,PIN_30,1,3.3-V LVCMOS,,,
+lout[18],Unknown,PIN_29,1,3.3-V LVCMOS,,,
+lout[19],Unknown,PIN_28,1,3.3-V LVCMOS,,,
+lout[20],Unknown,PIN_27,1,3.3-V LVCMOS,,,
+lout[21],Unknown,PIN_26,1,3.3-V LVCMOS,,,
+lout[22],Unknown,PIN_21,1,3.3-V LVCMOS,,,
+lout[23],Unknown,PIN_20,1,3.3-V LVCMOS,,,
+rout[16],Unknown,PIN_73,2,3.3-V LVCMOS,,,
+rout[17],Unknown,PIN_72,2,3.3-V LVCMOS,,,
+rout[18],Unknown,PIN_71,2,3.3-V LVCMOS,,,
+rout[19],Unknown,PIN_70,2,3.3-V LVCMOS,,,
+rout[20],Unknown,PIN_69,2,3.3-V LVCMOS,,,
+rout[21],Unknown,PIN_68,2,3.3-V LVCMOS,,,
+rout[22],Unknown,PIN_67,2,3.3-V LVCMOS,,,
+rout[23],Unknown,PIN_66,2,3.3-V LVCMOS,,,
+lout,Unknown,,,3.3-V LVCMOS,,,
+rout,Unknown,,,3.3-V LVCMOS,,,
+clk,Unknown,PIN_12,1,3.3-V LVCMOS,,,
+mute,Unknown,PIN_5,1,3.3-V LVCMOS,,,

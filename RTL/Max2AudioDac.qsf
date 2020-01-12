@@ -1,0 +1,163 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 13:50:59  August 08, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Max2AudioDac_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY Max2AudioDac
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:50:59  AUGUST 08, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE Max2AudioDac.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name VECTOR_WAVEFORM_FILE waveform.vwf
+set_location_assignment PIN_51 -to lout[0]
+set_location_assignment PIN_2 -to bclk
+set_location_assignment PIN_3 -to din
+set_location_assignment PIN_34 -to lout[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to din
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to bclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to wclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[9]
+set_location_assignment PIN_35 -to lout[14]
+set_location_assignment PIN_36 -to lout[13]
+set_location_assignment PIN_37 -to lout[12]
+set_location_assignment PIN_38 -to lout[11]
+set_location_assignment PIN_39 -to lout[10]
+set_location_assignment PIN_40 -to lout[9]
+set_location_assignment PIN_41 -to lout[8]
+set_location_assignment PIN_42 -to lout[7]
+set_location_assignment PIN_43 -to lout[6]
+set_location_assignment PIN_44 -to lout[5]
+set_location_assignment PIN_47 -to lout[4]
+set_location_assignment PIN_48 -to lout[3]
+set_location_assignment PIN_49 -to lout[2]
+set_location_assignment PIN_50 -to lout[1]
+set_location_assignment PIN_74 -to rout[15]
+set_location_assignment PIN_75 -to rout[14]
+set_location_assignment PIN_76 -to rout[13]
+set_location_assignment PIN_77 -to rout[12]
+set_location_assignment PIN_78 -to rout[11]
+set_location_assignment PIN_81 -to rout[10]
+set_location_assignment PIN_82 -to rout[9]
+set_location_assignment PIN_84 -to rout[7]
+set_location_assignment PIN_83 -to rout[8]
+set_location_assignment PIN_86 -to rout[5]
+set_location_assignment PIN_85 -to rout[6]
+set_location_assignment PIN_87 -to rout[4]
+set_location_assignment PIN_88 -to rout[3]
+set_location_assignment PIN_89 -to rout[2]
+set_location_assignment PIN_90 -to rout[1]
+set_location_assignment PIN_91 -to rout[0]
+set_location_assignment PIN_4 -to wclk
+set_location_assignment PIN_33 -to lout[16]
+set_location_assignment PIN_30 -to lout[17]
+set_location_assignment PIN_29 -to lout[18]
+set_location_assignment PIN_28 -to lout[19]
+set_location_assignment PIN_27 -to lout[20]
+set_location_assignment PIN_26 -to lout[21]
+set_location_assignment PIN_21 -to lout[22]
+set_location_assignment PIN_20 -to lout[23]
+set_location_assignment PIN_73 -to rout[16]
+set_location_assignment PIN_72 -to rout[17]
+set_location_assignment PIN_71 -to rout[18]
+set_location_assignment PIN_70 -to rout[19]
+set_location_assignment PIN_69 -to rout[20]
+set_location_assignment PIN_68 -to rout[21]
+set_location_assignment PIN_67 -to rout[22]
+set_location_assignment PIN_66 -to rout[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to lout
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rout
+set_location_assignment PIN_12 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk
+set_location_assignment PIN_5 -to mute
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to mute
