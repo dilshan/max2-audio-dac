@@ -1,5 +1,7 @@
 # 24-bit Stereo Audio DAC for Raspberry Pi
 
+![MAX-II DAC Module](https://raw.githubusercontent.com/wiki/dilshan/max2-audio-dac/DSCN1155P-720p.JPG)
+
 This is a 24-bit stereo DAC, which is specifically built for Raspberry Pi boards. This R-2R ladder DAC is developing around Intel / Altera *EPM240T100C5N* CPLD.
 
 DAC which described in this repo can directly connect with the I2S interface of Raspberry Pi boards. The recommended supply voltage for this DAC is 5V to 8V.
@@ -10,6 +12,7 @@ This repository contains all the files and binaries to build DAC, which includin
 
 This is an open-source hardware project. All the content of this project are distributed under the terms of the following license:
 
-- Hardware License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- Software License: [MIT](https://github.com/dilshan/usb-external-display/blob/master/LICENSE)
-- Documentation License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+-   Hardware License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+-   Software License: [MIT](https://github.com/dilshan/usb-external-display/blob/master/LICENSE)
+-   Documentation License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
