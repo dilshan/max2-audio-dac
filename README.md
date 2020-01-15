@@ -14,4 +14,4 @@ This is an open-source hardware project. All the content of this project are dis
 
 -   Hardware License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 -   Software License: [MIT](https://github.com/dilshan/max2-audio-dac/blob/master/LICENSE)
--   Documentation License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+-   [Documentation](https://github.com/dilshan/max2-audio-dac/wiki) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
