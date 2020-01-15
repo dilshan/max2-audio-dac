@@ -1,4 +1,6 @@
 # 24-bit Stereo Audio DAC for Raspberry Pi
+![Platform](https://img.shields.io/badge/platform-MAX--II-red)
+![GitHub](https://img.shields.io/github/license/dilshan/max2-audio-dac)
 
 ![MAX-II DAC Module](https://raw.githubusercontent.com/wiki/dilshan/max2-audio-dac/DSCN1155P-720p.JPG)
 
