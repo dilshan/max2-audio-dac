@@ -13,6 +13,5 @@ This repository contains all the files and binaries to build DAC, which includin
 This is an open-source hardware project. All the content of this project are distributed under the terms of the following license:
 
 -   Hardware License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
--   Software License: [MIT](https://github.com/dilshan/usb-external-display/blob/master/LICENSE)
+-   Software License: [MIT](https://github.com/dilshan/max2-audio-dac/blob/master/LICENSE)
 -   Documentation License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-
