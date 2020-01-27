@@ -18,4 +18,4 @@ This is certified open-source hardware project. All the content of this project 
 -   Software License: [MIT](https://github.com/dilshan/max2-audio-dac/blob/master/LICENSE)
 -   [Documentation](https://github.com/dilshan/max2-audio-dac/wiki) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-![OSHW-LK000006](https://raw.githubusercontent.com/dilshan/max2-audio-dac/master/OSHW_LK000006.png)
+[![OSHW-LK000006](https://raw.githubusercontent.com/dilshan/max2-audio-dac/master/OSHW_LK000006.png)](https://certification.oshwa.org/lk000006.html)
