@@ -12,8 +12,10 @@ The *MCP602* opamp of this module is capable to drive headphone directly. An ext
 
 This repository contains all the files and binaries to build DAC, which including *Intel Quartus* Project files, Raspberry Pi Device Tree Overlays, etc.
 
-This is an open-source hardware project. All the content of this project are distributed under the terms of the following license:
+This is certified open-source hardware project. All the content of this project are distributed under the terms of the following license:
 
 -   Hardware License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 -   Software License: [MIT](https://github.com/dilshan/max2-audio-dac/blob/master/LICENSE)
 -   [Documentation](https://github.com/dilshan/max2-audio-dac/wiki) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+![OSHW-LK000006](https://raw.githubusercontent.com/dilshan/max2-audio-dac/master/OSHW_LK000006.png)
